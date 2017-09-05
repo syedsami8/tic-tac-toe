@@ -111,18 +111,18 @@ $(document).ready(function () {
                 }
             }
 
-            //            console.log(colorArr);
+            //console.log(colorArr);
 
             if (xc == 3) {
                 vc = 1;
-                $('td div span').addClass('full');
+                //$('td div span').addClass('full');
                 boardFull = 0;
                 colorTheBlock(colorArr);
                 checker(vc);
                 break;
             } else if (oc == 3) {
                 vc = 0;
-                $('td div span').addClass('full');
+                //$('td div span').addClass('full');
                 boardFull = 0;
                 colorTheBlock(colorArr);
                 checker(vc);
@@ -152,7 +152,7 @@ $(document).ready(function () {
 
             if (xc == 3) {
                 vc = 1;
-                $('td div span').addClass('full');
+                //$('td div span').addClass('full');
                 boardFull = 0;
                 colorTheBlock(colorArr);
 
@@ -162,7 +162,7 @@ $(document).ready(function () {
                 break;
             } else if (oc == 3) {
                 vc = 0;
-                $('td div span').addClass('full');
+                //$('td div span').addClass('full');
                 boardFull = 0;
                 colorTheBlock(colorArr);
                 checker(vc);
@@ -182,7 +182,7 @@ $(document).ready(function () {
             //check for oblock (\)
             vc = 0;
             //colorArr = [[1, 1], [2, 2], [3, 3]];
-            $('td div span').addClass('lock');
+            //$('td div span').addClass('lock');
             boardFull = 0;
             colorTheBlock(colorArr, 1);
             checker(vc);
@@ -195,8 +195,8 @@ $(document).ready(function () {
             //check for oblock (/)
             vc = 0;
             //colorArr = [[1, 3], [2, 2], [3, 1]];
-            
-            $('td div span').addClass('lock');
+
+            //$('td div span').addClass('lock');
             boardFull = 0;
             colorTheBlock(colorArr, 2);
             checker(vc);
@@ -209,8 +209,8 @@ $(document).ready(function () {
             //check for xblock (\)
             vc = 1;
             //colorArr = [[1, 3], [2, 2], [3, 1]];
-            
-            $('td div span').addClass('full');
+
+            //$('td div span').addClass('full');
             boardFull = 0;
             colorTheBlock(colorArr, 1); // for d(\)
             checker(vc);
@@ -223,7 +223,7 @@ $(document).ready(function () {
             //check for xblock (/)
             vc = 1;
             //colorArr = [[1, 3], [2, 2], [3, 1]];
-            $('td div span').addClass('full');
+            //$('td div span').addClass('full');
             boardFull = 0;
             colorTheBlock(colorArr, 2); // for d(/)
             checker(vc);
